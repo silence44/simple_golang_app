@@ -8,6 +8,7 @@ COPY . .
 
 #installing dep and vendors
 RUN go get -v
+RUN go build
 
 EXPOSE 8081
 
