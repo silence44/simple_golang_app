@@ -8,8 +8,8 @@ ADD . .
 
 #installing dep and vendors
 RUN go get -v
-RUN go build -o simple_golang_app
+RUN go build -o app
 
 EXPOSE 8081
 
-ENTRYPOINT ["/go/src/simple_golang_app"]
+ENTRYPOINT ["/go/src/simple_golang_app/app"]
