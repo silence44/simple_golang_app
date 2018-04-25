@@ -10,6 +10,8 @@ ADD . .
 RUN go get -v
 RUN go build -o app
 
+VOLUME ["/go/src/simple_golang_app"]
+
 EXPOSE 8081
 
 ENTRYPOINT ["/go/src/simple_golang_app/app"]
